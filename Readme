@@ -1,0 +1,10 @@
+Olá Lucas, espero que esteja bem.
+Conforme a descrição do seu email, vim aqui relatar como foi o 
+desenvolvimento do projeto.
+
+Bom, essa é a primeira vez que tenho contato com React.JS, quando comecei a desenvolver o projeto, tive muita dúvida em como usar a ferramenta, assim comecei a programar com HTML e CSS para recordar algumas funcionalidades, depois busquei fontes que me auxiliaram
+no desenvolvimento do primeiro projeto proposto. Fique supreso pelas funcionalidas e pela forma que o framework otimiza o código comparando a HTML e CSS puro, aliás vale ressaltar que ele deixa a página da web mais dinâmica e também trata a janela quando for redimensionada de forma eficaz.
+Já sobre o meu desenvolvimento, busquei fontes como videos tutorias no youtube para aprender como que funcionava o carrossel, tive um auxilio do chatGPT onde tirei algumas dúvidas sobre a construção dos card e onde poderia buscar algumas URL's para tratar algumas imagens para testes, também procurei fontes como o StackOverFlow e alguns forúns onde é tratado bastante o JavaScript para backend.
+Infelizmente, não consegui consumir a API, não sei se é por alguma permissão da minha máquina já que tive que baixar o projeto como root, mas não acredito que seja isso. Pesquisei bem para solucionar esse problema, baixei o pacote axios e mesmo assim não consegui realizar um array de objetos da API, assim acabei enviando uma versão do desenvolvimento que usei como testes para ver uma demonstração de como a interface se comporta, pois usando o código da API, ele me retornava que não conseguia retornar nada que viesse da API.
+
+Lucas, agradeço pelo desafio do projeto em JavaScript para Backend, me interessei pelo framework React.JS, pela sua qualidade dinâmica de interfaces, mesmo não sendo minha área, gostei bastante.

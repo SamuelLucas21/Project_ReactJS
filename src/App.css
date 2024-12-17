@@ -1,0 +1,312 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.App {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #FCFCFC;
+  padding: 1rem;
+  width: 100%;
+  height: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  margin-left: 1rem;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li a {
+  color: #FCFCFC;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-list li a:hover {
+  text-decoration: underline;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-radial-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.carousel-btn-1,
+.carousel-btn-2,
+.carousel-btn-3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-btn-1.active,
+.carousel-btn-2.active,
+.carousel-btn-3.active {
+  background-color: #007bff;
+}
+
+.movie-catalog {
+  margin: 40px auto;
+  width: 80%;
+}
+
+.movie-catalog h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.movie-catalog-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.movie-card h3 {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .movie-card {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    width: 120px;
+  }
+}
+
+.pagination button {
+  background-color: #FCFCFC;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.search-filter {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.footer {
+  background-color: #726BEA;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 10px;
+  text-align: right;
+  padding-right: 100px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links i {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover i {
+  color: #ffcc00;
+}
+
+.footer-separator {
+  margin: 20px 100px;
+  border: 0;
+  border-top: 1px solid #fff;
+}
+
+.footer-left {
+  text-align: left;
+  padding-left: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.slick-slider {
+  position: relative;
+  width: 100%;
+}
+
+.slick-prev, .slick-next {
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.search-input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
